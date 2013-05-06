@@ -1,4 +1,0 @@
-string node_name
-string port_name
----
-int32 result
