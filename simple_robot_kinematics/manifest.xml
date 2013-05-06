@@ -1,0 +1,24 @@
+<package>
+  <description brief="simple_robot_kinematics">
+
+     simple_robot_kinematics
+
+  </description>
+  <author>Calder Phillips-Grafflin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/simple_robot_kinematics</url>
+  <depend package="roscpp"/>
+  <depend package="rospy"/>
+  <depend package="std_msgs"/>
+  <depend package="geometry_msgs"/>
+  <depend package="actionlib"/>
+  <depend package="tf"/>
+  <depend package="roslib"/>
+  <depend package="trajectory_msgs"/>
+  <depend package="kinematics_msgs"/>
+  <depend package="pr2_controllers_msgs"/>
+
+</package>
+
+
