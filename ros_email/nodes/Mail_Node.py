@@ -5,6 +5,7 @@ import smtp_email
 import roslib; roslib.load_manifest('ros_email')
 import rospy
 
+from ros_email.msg import *
 from ros_email.srv import *
 
 class EMAIL_NODE():
@@ -27,7 +28,10 @@ class EMAIL_NODE():
 
     def handler2(self, request):
         try:
-            self.mail_host.send(request.recipient, request.message_title, request.message_text, request.attachments)
+            attachments = []
+            for index in len(request.attachments):
+                attachments.append([request.attachments[index].name, request.attachments[index].data])
+            self.mail_host.send(request.recipient, request.message_title, request.message_text, attachments)
             return 0
         except:
             return 1

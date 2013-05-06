@@ -64,11 +64,11 @@ class SMTP_PLUS_EMAIL(SMTP_EMAIL):
         msg['Subject'] = subject
         #Assemble message
         msg.attach(MIMEText(message_text))
-        for f in attachments:
+        for attachment in attachments:
             part = MIMEBase('application', "octet-stream")
-            part.set_payload(f.data)
+            part.set_payload(attachment[1])
             Encoders.encode_base64(part)
-            part.add_header('Content-Disposition', 'attachment; filename="%s"' % f.name)
+            part.add_header('Content-Disposition', 'attachment; filename="%s"' % attachment[0])
             msg.attach(part)
         try:
             server.sendmail(self.username, recipient, msg.as_string())
