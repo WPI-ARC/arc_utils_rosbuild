@@ -1,0 +1,6 @@
+string recipient
+string message_title
+string message_text
+attachment[] attachments
+---
+int32 result
