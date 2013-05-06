@@ -1,0 +1,17 @@
+<package>
+  <description brief="ros_email">
+
+     ros_email
+
+  </description>
+  <author>Calder Phillips-Grafflin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/ros_email</url>
+
+  <depend package="std_msgs"/>
+  <depend package="rospy" />
+
+</package>
+
+
