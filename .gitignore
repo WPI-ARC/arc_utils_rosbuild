@@ -9,7 +9,7 @@ CMakeFiles/
 qtcreator-build/
 
 ros_email/src/ros_email/msg/
-ros_email/src/ros_email/src/
+ros_email/src/ros_email/srv/
 
 *~
 *.pyc
