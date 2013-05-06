@@ -1,0 +1,17 @@
+<package>
+  <description brief="generic_tf_broadcaster">
+
+     generic_tf_broadcaster
+
+  </description>
+  <author>Calder Phillips-Grafflin</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/generic_tf_broadcaster</url>
+  <depend package="rospy"/>
+  <depend package="std_msgs"/>
+  <depend package="tf"/>
+
+</package>
+
+
